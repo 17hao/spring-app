@@ -8,12 +8,16 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class CDPlayerConfig {
     @Bean
-    public MediaPlayer player() {
+    MediaPlayer plainPlayer() {
         return new CDPlayer(cd());
     }
 
     @Bean
-    CompactDisc cd() {
+    MediaPlayer sonyPlayer() {
+        return new SonyCDPlayer(cd());
+    }
+
+    private CompactDisc cd() {
         return new ConcreteCD();
     }
 }

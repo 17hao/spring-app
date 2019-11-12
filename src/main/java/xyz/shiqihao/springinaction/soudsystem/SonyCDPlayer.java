@@ -1,14 +1,16 @@
 package xyz.shiqihao.springinaction.soudsystem;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.inject.Inject;
+
 @Component
-class CDPlayer implements MediaPlayer {
+class SonyCDPlayer implements MediaPlayer {
+
     private CompactDisc cd;
 
-    @Autowired
-    CDPlayer(CompactDisc cd) {
+    @Inject
+    SonyCDPlayer(CompactDisc cd) {
         this.cd = cd;
     }
 
