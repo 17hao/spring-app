@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="djNewsProvider" class="xyz.shiqihao.example_01.FXNewsProvider">
+        <constructor-arg ref="djNewsListener"/>
+        <constructor-arg ref="djNewsPersistener"/>
+    </bean>
+
+    <bean id="djNewsListener" class="xyz.shiqihao.example_01.DowJonesNewsListener"/>
+    <bean id="djNewsPersistener" class="xyz.shiqihao.example_01.DowJonesNewsPersistener"/>
+</beans>

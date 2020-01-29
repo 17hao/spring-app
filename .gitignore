@@ -5,3 +5,5 @@
 build
 .idea
 gradle
+target
+.DS_Store
