@@ -20,7 +20,8 @@ dependencies {
             'com.google.code.gson:gson:2.8.5',
             'org.aspectj:aspectjrt:1.9.2',
             'javax.inject:javax.inject:1',
-            'junit:junit:4.12'
+            'junit:junit:4.12',
+            'org.aspectj:aspectjweaver:1.9.2'
     )
 }
 
