@@ -1,6 +1,9 @@
 plugins {
-    id 'java'
+    id 'war'
 }
+
+group = 'xyz.shiqihao'
+description = 'spring-app'
 
 repositories {
     mavenLocal()
@@ -21,7 +24,11 @@ dependencies {
             'org.aspectj:aspectjrt:1.9.2',
             'javax.inject:javax.inject:1',
             'junit:junit:4.12',
-            'org.aspectj:aspectjweaver:1.9.2'
+            'org.aspectj:aspectjweaver:1.9.2',
+            'javax.servlet:javax.servlet-api:4.0.1',
+            'com.fasterxml.jackson.core:jackson-core:2.10.2',
+            'com.fasterxml.jackson.core:jackson-databind:2.10.2',
+            'com.fasterxml.jackson.core:jackson-annotations:2.10.2'
     )
 }
 
