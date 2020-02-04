@@ -1,8 +1,8 @@
-package xyz.shiqihao.springinaction.spitter.config;
+package xyz.shiqihao.example_04;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[0];
@@ -10,7 +10,7 @@ public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherS
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[0];
+        return new Class[]{MyConfig.class};
     }
 
     @Override
