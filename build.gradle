@@ -32,7 +32,7 @@ dependencies {
     )
     testImplementation(
             'org.springframework:spring-test:5.1.5.RELEASE',
-            'junit:junit:4.12',
+            'junit:junit:4.13.1',
             'org.springframework.boot:spring-boot-starter-test'
     )
 }
